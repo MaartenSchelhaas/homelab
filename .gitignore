@@ -1,0 +1,10 @@
+# Never commit secrets.
+.env
+.env.*
+!.env.example
+
+# Traefik ACME storage - contains private keys once in use.
+acme.json
+
+# Portainer's data directory, if it ever becomes a bind mount.
+/portainer/data/
